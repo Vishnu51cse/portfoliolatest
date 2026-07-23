@@ -3,11 +3,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   FaJava, FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaBootstrap, 
   FaNodeJs, FaGitAlt, FaGithub, FaBitbucket, FaAws, FaLayerGroup, 
-  FaCube, FaSitemap, FaExchangeAlt, FaTachometerAlt, FaTasks, FaCloud, FaCode
+  FaCube, FaSitemap, FaExchangeAlt, FaTachometerAlt, FaTasks, FaCloud, FaCode, FaCogs
 } from 'react-icons/fa';
 import { 
   SiDotnet, SiExpress, 
-  SiMongodb, SiMysql, SiPostman, SiSwagger 
+  SiMongodb, SiMysql, SiPostman, SiSwagger, SiVite
 } from 'react-icons/si';
 import { skills, skillCategories } from '../data/portfolioData';
 
@@ -47,9 +47,9 @@ const iconMap = {
   SiCsharp: CSharpIcon, FaJava, SiDotnet, SiMicrosoft: MicrosoftIcon, FaNodeJs, SiExpress,
   FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaBootstrap,
   SiMicrosoftsqlserver: SqlServerIcon, SiMongodb, SiMysql, FaGitAlt, FaGithub,
-  FaBitbucket, SiPostman, SiVisualstudio: VisualStudioIcon, SiSwagger, FaAws,
+  FaBitbucket, SiPostman, SiVisualstudio: VisualStudioIcon, SiSwagger, FaAws, SiVite,
   FaLayerGroup, FaCube, FaSitemap, FaExchangeAlt, FaTachometerAlt,
-  FaTasks, FaCloud
+  FaTasks, FaCloud, FaCogs
 };
 
 export default function Skills() {

@@ -19,7 +19,7 @@ export const personalInfo = {
 
 export const stats = [
   { label: "Year Experience", value: "1+", suffix: "Year" },
-  { label: "Core Technologies", value: "15+", suffix: "Techs" },
+  { label: "Core Database", value: "SQL Server", suffix: "Expertise" },
   { label: "Architecture", value: "3-Tier", suffix: "Pattern" },
   { label: "Cloud Deployment", value: "AWS EC2", suffix: "Hosted" }
 ];
@@ -69,15 +69,16 @@ export const skills = [
   { name: "SQL Workbench", category: "tools", color: "#4479A1", iconName: "SiMysql" },
   { name: "AWS EC2", category: "tools", color: "#FF9900", iconName: "FaAws" },
   { name: "Swagger", category: "tools", color: "#85EA2D", iconName: "SiSwagger" },
+  { name: "Vite", category: "tools", color: "#646CFF", iconName: "SiVite" },
 
   // Concepts
-  { name: "3-Tier Architecture", category: "concepts", color: "#3B82F6", iconName: "FaLayerGroup" },
   { name: "OOPS", category: "concepts", color: "#7C3AED", iconName: "FaCube" },
   { name: "MVC", category: "concepts", color: "#06B6D4", iconName: "FaSitemap" },
   { name: "REST APIs", category: "concepts", color: "#10B981", iconName: "FaExchangeAlt" },
   { name: "Query Optimization", category: "concepts", color: "#F59E0B", iconName: "FaTachometerAlt" },
   { name: "Cloud Scalability", category: "concepts", color: "#6366F1", iconName: "FaCloud" },
-  { name: "SDLC", category: "concepts", color: "#EC4899", iconName: "FaTasks" }
+  { name: "SDLC", category: "concepts", color: "#EC4899", iconName: "FaTasks" },
+  { name: "Windows Service", category: "concepts", color: "#0078D4", iconName: "FaCogs" }
 ];
 
 export const experienceData = [
@@ -98,9 +99,24 @@ export const experienceData = [
       "Implemented JavaScript validations to improve data accuracy and reduce input errors.",
       "Worked on data migration between different systems using SQL stored procedures.",
       "Collaborated in Agile environment using Jira for task tracking and Git/Bitbucket for version control.",
-      "Hosted LMS on AWS EC2 using separate instances for C# and SQL Server."
+      "Hosted LMS on AWS EC2 using separate instances for C# and SQL Server.",
+      "Developed Windows Services to trigger automated email notifications to clients and source branches."
     ],
-    techStack: ["C#", "ASP.NET Core Web API", "ASP.NET MVC", "Entity Framework Core", "SQL Server", "Razor Views", "JavaScript", "AWS EC2", "Jira", "Git", "Bitbucket"]
+    techStack: ["C#", "ASP.NET Core Web API", "ASP.NET MVC", "Entity Framework Core", "SQL Server", "Windows Services", "Razor Views", "JavaScript", "AWS EC2", "Jira", "Git", "Bitbucket"]
+  }
+];
+
+export const publicationsData = [
+  {
+    id: 1,
+    title: "Ensemble Based Approach for Bitcoin Price Prediction",
+    publisher: "IEEE Xplore",
+    year: "2025",
+    doi: "10.1109/ICCCI64711.2025.11086125",
+    doiUrl: "https://ieeexplore.ieee.org/document/11086125/",
+    summary: "Published an IEEE research paper proposing an ensemble deep learning model combining LSTM and GRU networks for Bitcoin price prediction, achieving an R² score of 0.986 with improved forecasting accuracy.",
+    metrics: "R² Score: 0.986",
+    technologies: ["LSTM Networks", "GRU Networks", "Ensemble Learning", "Bitcoin Forecasting", "Python", "Deep Learning"]
   }
 ];
 
