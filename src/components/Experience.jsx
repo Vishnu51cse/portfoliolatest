@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt, FaCheckCircle, FaBuilding } from 'react-icons/fa';
+import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt, FaCheckCircle, FaBuilding, FaProjectDiagram } from 'react-icons/fa';
 import { experienceData } from '../data/portfolioData';
 
 export default function Experience() {
@@ -24,7 +24,7 @@ export default function Experience() {
           Work <span className="text-gradient-primary">Experience</span>
         </h2>
         <p className="text-zinc-400 mt-4 text-base sm:text-lg">
-          Hands-on software engineering experience delivering enterprise applications & high-performance backend systems.
+          Hands-on software engineering experience delivering enterprise FinTech applications & high-performance backend systems.
         </p>
       </motion.div>
 
@@ -76,9 +76,18 @@ export default function Experience() {
                 </div>
               </div>
 
-              <p className="text-zinc-300 text-sm sm:text-base leading-relaxed mb-6 font-medium">
-                {exp.description}
-              </p>
+              {/* Project Focus Banner */}
+              {exp.projectName && (
+                <div className="p-4 rounded-2xl bg-white/5 border border-white/10 mb-6">
+                  <div className="flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-wider mb-1">
+                    <FaProjectDiagram />
+                    <span>Project: {exp.projectName}</span>
+                  </div>
+                  <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed font-medium">
+                    {exp.projectDescription}
+                  </p>
+                </div>
+              )}
 
               {/* Responsibilities Grid List */}
               <div className="mb-8">

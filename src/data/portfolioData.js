@@ -1,14 +1,14 @@
 export const personalInfo = {
   name: "Vishnu Prasad Seenivasa Kumar",
   shortName: "Vishnu Prasad",
-  title: "Software Engineer",
+  title: "Software Developer (.NET)",
   roles: [
-    "ASP.NET Developer",
-    "React Developer",
-    "Full Stack Developer",
-    "SQL Server Developer"
+    "ASP.NET Core Developer",
+    "Full Stack .NET Developer",
+    "SQL Server Specialist",
+    "React & Web API Developer"
   ],
-  summary: "Software Engineer with 1 year of experience in C#, ASP.NET, and SQL Server, specializing in backend development, API development, and database management. Experienced in building scalable 3-tier applications using ADO.NET, following SDLC practices, and deploying solutions on AWS EC2 with strong focus on query optimization.",
+  summary: "Software Developer (.NET) with 1+ year of experience in C#, ASP.NET Core, Web API, MVC, SQL Server, and ADO.NET. Experienced in developing enterprise FinTech applications, REST APIs, SQL optimization, and AWS deployment. Seeking a growth-oriented opportunity to build a successful career while contributing to organizational goals and continuously enhancing my technical skills.",
   location: "Chennai, Tamil Nadu, India",
   phone: "+91-637-999-3561",
   email: "vishnuprasad.contact@gmail.com",
@@ -30,7 +30,7 @@ export const skillCategories = [
   { id: "backend", label: "Backend" },
   { id: "frontend", label: "Frontend" },
   { id: "database", label: "Database" },
-  { id: "tools", label: "Tools & Cloud" },
+  { id: "tools", label: "Tools & CI/CD" },
   { id: "concepts", label: "Concepts" }
 ];
 
@@ -40,10 +40,9 @@ export const skills = [
   { name: "Java", category: "programming", color: "#E76F00", iconName: "FaJava" },
 
   // Backend
-  { name: "ASP.NET MVC", category: "backend", color: "#512BD4", iconName: "SiDotnet" },
-  { name: "ASP.NET Web API", category: "backend", color: "#512BD4", iconName: "SiDotnet" },
+  { name: "ASP.NET Core MVC", category: "backend", color: "#512BD4", iconName: "SiDotnet" },
+  { name: "ASP.NET Core Web API", category: "backend", color: "#512BD4", iconName: "SiDotnet" },
   { name: "ADO.NET", category: "backend", color: "#0078D4", iconName: "SiMicrosoft" },
-  { name: "Entity Framework", category: "backend", color: "#512BD4", iconName: "SiDotnet" },
   { name: "Node.js", category: "backend", color: "#339933", iconName: "FaNodeJs" },
   { name: "Express.js", category: "backend", color: "#000000", iconName: "SiExpress" },
 
@@ -70,6 +69,7 @@ export const skills = [
   { name: "AWS EC2", category: "tools", color: "#FF9900", iconName: "FaAws" },
   { name: "Swagger", category: "tools", color: "#85EA2D", iconName: "SiSwagger" },
   { name: "Vite", category: "tools", color: "#646CFF", iconName: "SiVite" },
+  { name: "Jenkins", category: "tools", color: "#D24939", iconName: "SiJenkins" },
 
   // Concepts
   { name: "OOPS", category: "concepts", color: "#7C3AED", iconName: "FaCube" },
@@ -88,21 +88,25 @@ export const experienceData = [
     period: "June 2025 – Present",
     location: "Chennai, India",
     type: "Full-Time",
-    description: "Designing, building, and maintaining enterprise Loan Management Systems (LMS) with 3-tier architecture, C#, ASP.NET Core, and optimized SQL Server backends.",
+    projectName: "Loan Management System (LMS)",
+    projectDescription: "A FinTech enterprise application for managing loan-related operations, supporting core business processes including asset management, loan expenses, logistics, and dealer operations.",
+    description: "Developing and maintaining enterprise FinTech solutions using 3-tier architecture, C#, ASP.NET Core, REST APIs, SQL Server, and Jenkins CI/CD deployment pipelines.",
     responsibilities: [
-      "Designed and maintained Loan Management System (LMS) using C# and 3-tier architecture.",
-      "Implemented modules for loan approval, document verification, and asset management.",
+      "Collaborated with Shriram Finance group to deliver solutions aligned with business requirements.",
       "Optimized SQL stored procedures by 20% through indexing and query tuning.",
-      "Established new REST API endpoints using ASP.NET Core Web API and Entity Framework Core.",
+      "Established new REST API endpoints using ASP.NET Core Web API.",
       "Developed user interfaces using ASP.NET Core MVC and Razor Views.",
       "Debugged and resolved production issues, reducing system errors by 30%.",
       "Implemented JavaScript validations to improve data accuracy and reduce input errors.",
       "Worked on data migration between different systems using SQL stored procedures.",
       "Collaborated in Agile environment using Jira for task tracking and Git/Bitbucket for version control.",
       "Hosted LMS on AWS EC2 using separate instances for C# and SQL Server.",
-      "Developed Windows Services to trigger automated email notifications to clients and source branches."
+      "Developed Windows Services to trigger automated email notifications to clients and source branches.",
+      "Performed unit tests and code coverage activities following development to ensure code quality.",
+      "Merged code changes and triggered environment builds using Jenkins as part of the deployment process.",
+      "Resolved application vulnerabilities identified through security assessment reports."
     ],
-    techStack: ["C#", "ASP.NET Core Web API", "ASP.NET MVC", "Entity Framework Core", "SQL Server", "Windows Services", "Razor Views", "JavaScript", "AWS EC2", "Jira", "Git", "Bitbucket"]
+    techStack: ["C#", "ASP.NET Core Web API", "ASP.NET Core MVC", "SQL Server", "Windows Services", "Jenkins CI/CD", "Razor Views", "JavaScript", "AWS EC2", "Jira", "Git", "Bitbucket", "Unit Testing", "Security Assessment"]
   }
 ];
 
@@ -114,43 +118,32 @@ export const publicationsData = [
     year: "2025",
     doi: "10.1109/ICCCI64711.2025.11086125",
     doiUrl: "https://ieeexplore.ieee.org/document/11086125/",
-    summary: "Published an IEEE research paper proposing an ensemble deep learning model combining LSTM and GRU networks for Bitcoin price prediction, achieving an R² score of 0.986 with improved forecasting accuracy.",
+    summary: "Designed and trained an ensemble deep learning model combining LSTM and GRU networks to forecast Bitcoin prices, achieving an R-squared score of 0.986. Preprocessed historical price data, engineered time-series features, and evaluated model performance to improve forecasting accuracy.",
+    highlights: [
+      "Designed and trained an ensemble deep learning model combining LSTM and GRU networks to forecast Bitcoin prices, achieving an R-squared score of 0.986.",
+      "Preprocessed historical price data, engineered time-series features, and evaluated model performance to improve forecasting accuracy.",
+      "Published findings as an IEEE research paper in IEEE Xplore, 2025. (DOI: 10.1109/ICCCI64711.2025.11086125)"
+    ],
     metrics: "R² Score: 0.986",
-    technologies: ["LSTM Networks", "GRU Networks", "Ensemble Learning", "Bitcoin Forecasting", "Python", "Deep Learning"]
+    technologies: ["LSTM Networks", "GRU Networks", "Ensemble Learning", "Time-Series Features", "Bitcoin Forecasting", "Python"]
   }
 ];
 
 export const projectsData = [
   {
     id: 1,
-    title: "Event Management System",
-    subtitle: "Enterprise Booking & Service Management Application",
-    technologies: ["C#", "SQL Server", "ADO.NET", "3-Tier Architecture"],
-    description: "Developed a scalable event management system enabling booking and service management workflows. Integrated SQL Server database using ADO.NET for authentication and data management.",
+    title: "Loan Management System (LMS)",
+    subtitle: "Enterprise FinTech Application",
+    technologies: ["C#", "ASP.NET Core", "SQL Server", "Windows Services", "AWS EC2", "Jenkins"],
+    description: "FinTech application for managing loan-related operations, supporting business processes including asset management, loan expenses, logistics, and dealer operations.",
     highlights: [
-      "Built multi-layer 3-Tier architecture separating UI, Data Access, and Business Logic.",
-      "Implemented secure authentication and role-based authorization for booking services.",
-      "Optimized database queries for fast event search, booking reservations, and real-time scheduling.",
-      "Integrated SQL Server database using ADO.NET for high-throughput authentication and data management."
+      "Collaborated with Shriram Finance group to deliver solutions aligned with business requirements.",
+      "Optimized SQL stored procedures by 20% through indexing and query tuning.",
+      "Developed Windows Services for automated email notifications to clients and source branches.",
+      "Merged code changes and triggered environment builds using Jenkins CI/CD deployment process."
     ],
     gradient: "from-purple-600/30 via-blue-600/20 to-transparent",
     iconColor: "#7C3AED",
-    github: "https://github.com/Vishnu51cse"
-  },
-  {
-    id: 2,
-    title: "Contact Management System",
-    subtitle: "Full-Stack MERN Web Application",
-    technologies: ["React", "Node.js", "Express.js", "MongoDB", "REST API"],
-    description: "Developed REST APIs and integrated frontend with backend services. Implemented features for create, update, delete, and search operations.",
-    highlights: [
-      "Designed interactive React UI featuring search, contact filtering, and dynamic forms.",
-      "Created robust REST APIs with Express.js and Node.js for managing contact databases.",
-      "Implemented features for full CRUD (create, update, delete, and search) operations.",
-      "Integrated MongoDB database with backend service API endpoints."
-    ],
-    gradient: "from-cyan-600/30 via-teal-600/20 to-transparent",
-    iconColor: "#06B6D4",
     github: "https://github.com/Vishnu51cse"
   }
 ];

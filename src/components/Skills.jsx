@@ -7,7 +7,7 @@ import {
 } from 'react-icons/fa';
 import { 
   SiDotnet, SiExpress, 
-  SiMongodb, SiMysql, SiPostman, SiSwagger, SiVite
+  SiMongodb, SiMysql, SiPostman, SiSwagger, SiVite, SiJenkins
 } from 'react-icons/si';
 import { skills, skillCategories } from '../data/portfolioData';
 
@@ -47,7 +47,7 @@ const iconMap = {
   SiCsharp: CSharpIcon, FaJava, SiDotnet, SiMicrosoft: MicrosoftIcon, FaNodeJs, SiExpress,
   FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaBootstrap,
   SiMicrosoftsqlserver: SqlServerIcon, SiMongodb, SiMysql, FaGitAlt, FaGithub,
-  FaBitbucket, SiPostman, SiVisualstudio: VisualStudioIcon, SiSwagger, FaAws, SiVite,
+  FaBitbucket, SiPostman, SiVisualstudio: VisualStudioIcon, SiSwagger, FaAws, SiVite, SiJenkins,
   FaLayerGroup, FaCube, FaSitemap, FaExchangeAlt, FaTachometerAlt,
   FaTasks, FaCloud, FaCogs
 };
