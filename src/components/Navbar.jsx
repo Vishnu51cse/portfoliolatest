@@ -57,7 +57,7 @@ export default function Navbar() {
                 Vishnu Prasad
               </span>
               <span className="text-[10px] text-zinc-400 font-mono tracking-wider uppercase">
-                Software Engineer
+                Software Engineer | .NET Dev
               </span>
             </div>
           </a>

@@ -3,11 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   FaJava, FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaBootstrap, 
   FaNodeJs, FaGitAlt, FaGithub, FaBitbucket, FaAws, FaLayerGroup, 
-  FaCube, FaSitemap, FaExchangeAlt, FaTachometerAlt, FaTasks, FaCloud, FaCode, FaCogs
+  FaCube, FaSitemap, FaExchangeAlt, FaTachometerAlt, FaTasks, FaCloud,
+  FaCode, FaCogs, FaLock, FaShieldAlt
 } from 'react-icons/fa';
 import { 
   SiDotnet, SiExpress, 
-  SiMongodb, SiMysql, SiPostman, SiSwagger, SiVite, SiJenkins
+  SiMongodb, SiMysql, SiPostman, SiSwagger, SiVite, SiJenkins, SiJira
 } from 'react-icons/si';
 import { skills, skillCategories } from '../data/portfolioData';
 
@@ -44,12 +45,40 @@ const VisualStudioIcon = () => (
 
 // Map string icon names to React Component Icons
 const iconMap = {
-  SiCsharp: CSharpIcon, FaJava, SiDotnet, SiMicrosoft: MicrosoftIcon, FaNodeJs, SiExpress,
-  FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaBootstrap,
-  SiMicrosoftsqlserver: SqlServerIcon, SiMongodb, SiMysql, FaGitAlt, FaGithub,
-  FaBitbucket, SiPostman, SiVisualstudio: VisualStudioIcon, SiSwagger, FaAws, SiVite, SiJenkins,
-  FaLayerGroup, FaCube, FaSitemap, FaExchangeAlt, FaTachometerAlt,
-  FaTasks, FaCloud, FaCogs
+  SiCsharp: CSharpIcon,
+  FaJava,
+  SiDotnet,
+  SiMicrosoft: MicrosoftIcon,
+  FaNodeJs,
+  SiExpress,
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaReact,
+  FaBootstrap,
+  SiMicrosoftsqlserver: SqlServerIcon,
+  SiMongodb,
+  SiMysql,
+  FaGitAlt,
+  FaGithub,
+  FaBitbucket,
+  SiPostman,
+  SiVisualstudio: VisualStudioIcon,
+  SiSwagger,
+  FaAws,
+  SiVite,
+  SiJenkins,
+  SiJira,
+  FaLock,
+  FaShieldAlt,
+  FaLayerGroup,
+  FaCube,
+  FaSitemap,
+  FaExchangeAlt,
+  FaTachometerAlt,
+  FaTasks,
+  FaCloud,
+  FaCogs
 };
 
 export default function Skills() {
@@ -76,7 +105,7 @@ export default function Skills() {
           Skills & <span className="text-gradient-accent">Technologies</span>
         </h2>
         <p className="text-zinc-400 mt-4 text-base sm:text-lg">
-          Technologies across 3-tier architecture, backend engineering, cloud & modern web.
+          Full-stack .NET expertise across backend, frontend, cloud, security, and DevOps.
         </p>
       </motion.div>
 
@@ -126,14 +155,14 @@ export default function Skills() {
                   className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-3 transition-transform duration-300 group-hover:scale-110"
                   style={{ 
                     backgroundColor: `${skill.color}15`, 
-                    color: skill.color === "#000000" ? "#FFFFFF" : skill.color 
+                    color: skill.color === "#000000" || skill.color === "#181717" ? "#FFFFFF" : skill.color 
                   }}
                 >
                   <IconComponent />
                 </div>
 
                 {/* Skill Name */}
-                <span className="font-semibold text-sm sm:text-base text-zinc-200 group-hover:text-white transition-colors line-clamp-1">
+                <span className="font-semibold text-sm sm:text-base text-zinc-200 group-hover:text-white transition-colors line-clamp-2 leading-tight">
                   {skill.name}
                 </span>
               </motion.div>

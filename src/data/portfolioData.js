@@ -1,84 +1,89 @@
 export const personalInfo = {
   name: "Vishnu Prasad Seenivasa Kumar",
   shortName: "Vishnu Prasad",
-  title: "Software Developer (.NET)",
+  title: "Software Engineer | .NET Full-Stack Developer",
   roles: [
+    ".NET Full-Stack Developer",
     "ASP.NET Core Developer",
-    "Full Stack .NET Developer",
     "SQL Server Specialist",
     "React & Web API Developer"
   ],
-  summary: "Software Developer (.NET) with 1+ year of experience in C#, ASP.NET Core, Web API, MVC, SQL Server, and ADO.NET. Experienced in developing enterprise FinTech applications, REST APIs, SQL optimization, and AWS deployment. Seeking a growth-oriented opportunity to build a successful career while contributing to organizational goals and continuously enhancing my technical skills.",
+  summary: "Software Engineer with 1+ year of experience building enterprise FinTech applications in C#, ASP.NET Core and SQL Server. Reduced production errors by 90% and improved SQL performance by 20% on the Loan Management System for Shriram Finance Group. Full-stack across REST APIs, Entity Framework Core, React, AWS EC2 and Jenkins.",
   location: "Chennai, Tamil Nadu, India",
   phone: "+91-637-999-3561",
   email: "vishnuprasad.contact@gmail.com",
   linkedin: "https://linkedin.com/in/vishnuprasad5",
   github: "https://github.com/Vishnu51cse",
+  portfolio: "https://vishnuprasadportfolio.netlify.app",
   resumeUrl: "/Vishnu_Prasad_Resume.pdf",
 };
 
 export const stats = [
   { label: "Year Experience", value: "1+", suffix: "Year" },
-  { label: "Core Database", value: "SQL Server", suffix: "Expertise" },
-  { label: "Architecture", value: "3-Tier", suffix: "Pattern" },
-  { label: "Cloud Deployment", value: "AWS EC2", suffix: "Hosted" }
+  { label: "Production Errors Reduced", value: "90%", suffix: "Fix Rate" },
+  { label: "SQL Performance Improved", value: "20%", suffix: "Faster" },
+  { label: "Vulnerabilities Fixed", value: "100+", suffix: "Secured" }
 ];
 
 export const skillCategories = [
   { id: "all", label: "All Skills" },
-  { id: "programming", label: "Programming" },
   { id: "backend", label: "Backend" },
   { id: "frontend", label: "Frontend" },
   { id: "database", label: "Database" },
-  { id: "tools", label: "Tools & CI/CD" },
-  { id: "concepts", label: "Concepts" }
+  { id: "devops", label: "Cloud & DevOps" },
+  { id: "security", label: "Security" },
+  { id: "concepts", label: "Concepts" },
+  { id: "tools", label: "Tools" }
 ];
 
 export const skills = [
-  // Programming
-  { name: "C#", category: "programming", color: "#A179DC", iconName: "SiCsharp" },
-  { name: "Java", category: "programming", color: "#E76F00", iconName: "FaJava" },
-
   // Backend
-  { name: "ASP.NET Core MVC", category: "backend", color: "#512BD4", iconName: "SiDotnet" },
-  { name: "ASP.NET Core Web API", category: "backend", color: "#512BD4", iconName: "SiDotnet" },
+  { name: "C#", category: "backend", color: "#A179DC", iconName: "SiCsharp" },
+  { name: "ASP.NET Core", category: "backend", color: "#512BD4", iconName: "SiDotnet" },
+  { name: "Web API", category: "backend", color: "#512BD4", iconName: "SiDotnet" },
+  { name: "Entity Framework Core", category: "backend", color: "#512BD4", iconName: "SiDotnet" },
+  { name: "ASP.NET Web Forms", category: "backend", color: "#512BD4", iconName: "SiDotnet" },
+  { name: "LINQ", category: "backend", color: "#A179DC", iconName: "SiCsharp" },
   { name: "ADO.NET", category: "backend", color: "#0078D4", iconName: "SiMicrosoft" },
-  { name: "Node.js", category: "backend", color: "#339933", iconName: "FaNodeJs" },
-  { name: "Express.js", category: "backend", color: "#000000", iconName: "SiExpress" },
+  { name: "Windows Services", category: "backend", color: "#0078D4", iconName: "FaCogs" },
 
   // Frontend
+  { name: "React", category: "frontend", color: "#61DAFB", iconName: "FaReact" },
+  { name: "JavaScript", category: "frontend", color: "#F7DF1E", iconName: "FaJsSquare" },
   { name: "HTML", category: "frontend", color: "#E34F26", iconName: "FaHtml5" },
   { name: "CSS", category: "frontend", color: "#1572B6", iconName: "FaCss3Alt" },
-  { name: "JavaScript", category: "frontend", color: "#F7DF1E", iconName: "FaJsSquare" },
-  { name: "React", category: "frontend", color: "#61DAFB", iconName: "FaReact" },
   { name: "Bootstrap", category: "frontend", color: "#7952B3", iconName: "FaBootstrap" },
   { name: "Razor Views", category: "frontend", color: "#512BD4", iconName: "SiDotnet" },
 
   // Database
   { name: "SQL Server", category: "database", color: "#CC292B", iconName: "SiMicrosoftsqlserver" },
-  { name: "MongoDB", category: "database", color: "#47A248", iconName: "SiMongodb" },
   { name: "MySQL", category: "database", color: "#4479A1", iconName: "SiMysql" },
 
-  // Tools
-  { name: "Git", category: "tools", color: "#F05032", iconName: "FaGitAlt" },
-  { name: "GitHub", category: "tools", color: "#181717", iconName: "FaGithub" },
-  { name: "Bitbucket", category: "tools", color: "#0052CC", iconName: "FaBitbucket" },
-  { name: "Postman", category: "tools", color: "#FF6C37", iconName: "SiPostman" },
-  { name: "Visual Studio", category: "tools", color: "#5C2D91", iconName: "SiVisualstudio" },
-  { name: "SQL Workbench", category: "tools", color: "#4479A1", iconName: "SiMysql" },
-  { name: "AWS EC2", category: "tools", color: "#FF9900", iconName: "FaAws" },
-  { name: "Swagger", category: "tools", color: "#85EA2D", iconName: "SiSwagger" },
-  { name: "Vite", category: "tools", color: "#646CFF", iconName: "SiVite" },
-  { name: "Jenkins", category: "tools", color: "#D24939", iconName: "SiJenkins" },
+  // Cloud & DevOps
+  { name: "AWS EC2", category: "devops", color: "#FF9900", iconName: "FaAws" },
+  { name: "Jenkins", category: "devops", color: "#D24939", iconName: "SiJenkins" },
+  { name: "Git", category: "devops", color: "#F05032", iconName: "FaGitAlt" },
+  { name: "GitHub", category: "devops", color: "#181717", iconName: "FaGithub" },
+  { name: "Bitbucket", category: "devops", color: "#0052CC", iconName: "FaBitbucket" },
+
+  // Security
+  { name: "JWT Authentication", category: "security", color: "#D63031", iconName: "FaLock" },
+  { name: "Vulnerability Remediation", category: "security", color: "#E17055", iconName: "FaShieldAlt" },
+  { name: "SAST (Checkmarx)", category: "security", color: "#6C5CE7", iconName: "FaShieldAlt" },
 
   // Concepts
-  { name: "OOPS", category: "concepts", color: "#7C3AED", iconName: "FaCube" },
+  { name: "OOP", category: "concepts", color: "#7C3AED", iconName: "FaCube" },
   { name: "MVC", category: "concepts", color: "#06B6D4", iconName: "FaSitemap" },
   { name: "REST APIs", category: "concepts", color: "#10B981", iconName: "FaExchangeAlt" },
-  { name: "Query Optimization", category: "concepts", color: "#F59E0B", iconName: "FaTachometerAlt" },
-  { name: "Cloud Scalability", category: "concepts", color: "#6366F1", iconName: "FaCloud" },
-  { name: "SDLC", category: "concepts", color: "#EC4899", iconName: "FaTasks" },
-  { name: "Windows Service", category: "concepts", color: "#0078D4", iconName: "FaCogs" }
+  { name: "Dependency Injection", category: "concepts", color: "#F59E0B", iconName: "FaLayerGroup" },
+  { name: "Layered Architecture", category: "concepts", color: "#6366F1", iconName: "FaLayerGroup" },
+  { name: "Agile / SDLC", category: "concepts", color: "#EC4899", iconName: "FaTasks" },
+
+  // Tools
+  { name: "Postman", category: "tools", color: "#FF6C37", iconName: "SiPostman" },
+  { name: "Swagger", category: "tools", color: "#85EA2D", iconName: "SiSwagger" },
+  { name: "Visual Studio", category: "tools", color: "#5C2D91", iconName: "SiVisualstudio" },
+  { name: "Jira", category: "tools", color: "#0052CC", iconName: "SiJira" }
 ];
 
 export const experienceData = [
@@ -89,24 +94,21 @@ export const experienceData = [
     location: "Chennai, India",
     type: "Full-Time",
     projectName: "Loan Management System (LMS)",
-    projectDescription: "A FinTech enterprise application for managing loan-related operations, supporting core business processes including asset management, loan expenses, logistics, and dealer operations.",
-    description: "Developing and maintaining enterprise FinTech solutions using 3-tier architecture, C#, ASP.NET Core, REST APIs, SQL Server, and Jenkins CI/CD deployment pipelines.",
+    projectDescription: "Enterprise FinTech application for Shriram Finance Group managing loan-related operations including asset management, loan expenses, logistics, and dealer operations.",
+    description: "Building enterprise FinTech solutions using 3-tier architecture, C#, ASP.NET Core, REST APIs, SQL Server, and Jenkins CI/CD deployment pipelines.",
     responsibilities: [
-      "Collaborated with Shriram Finance group to deliver solutions aligned with business requirements.",
-      "Optimized SQL stored procedures by 20% through indexing and query tuning.",
-      "Established new REST API endpoints using ASP.NET Core Web API.",
-      "Developed user interfaces using ASP.NET Core MVC and Razor Views.",
-      "Debugged and resolved production issues, reducing system errors by 30%.",
-      "Implemented JavaScript validations to improve data accuracy and reduce input errors.",
-      "Worked on data migration between different systems using SQL stored procedures.",
-      "Collaborated in Agile environment using Jira for task tracking and Git/Bitbucket for version control.",
-      "Hosted LMS on AWS EC2 using separate instances for C# and SQL Server.",
-      "Developed Windows Services to trigger automated email notifications to clients and source branches.",
-      "Performed unit tests and code coverage activities following development to ensure code quality.",
-      "Merged code changes and triggered environment builds using Jenkins as part of the deployment process.",
-      "Resolved application vulnerabilities identified through security assessment reports."
+      "Implemented ASP.NET Core Web API endpoints using dependency injection for service and data-access layers, with Entity Framework Core for entity mapping and CRUD operations.",
+      "Optimized SQL Server stored procedures through indexing and query tuning, improving performance by 20%.",
+      "Diagnosed and resolved production issues, reducing system errors by 90%.",
+      "Built 20+ responsive screens using ASP.NET Core MVC, Razor Views and React.",
+      "Implemented ASP.NET Web Forms modules for asset management, loan expenses, logistics and dealer operations.",
+      "Automated email notifications through Windows Services, handling 10,000+ emails per day for clients and source branches.",
+      "Deployed and maintained the application on AWS EC2 using separate instances for the application and SQL Server.",
+      "Managed Git/Bitbucket merges and used Jenkins CI/CD pipelines to build and deploy production patches in an Agile team.",
+      "Remediated 100+ application vulnerabilities and SAST findings identified by Checkmarx and security assessments.",
+      "Executed manual functional and regression checks across LMS modules to validate new features, verify bug fixes and identify unintended changes before production releases."
     ],
-    techStack: ["C#", "ASP.NET Core Web API", "ASP.NET Core MVC", "SQL Server", "Windows Services", "Jenkins CI/CD", "Razor Views", "JavaScript", "AWS EC2", "Jira", "Git", "Bitbucket", "Unit Testing", "Security Assessment"]
+    techStack: ["C#", "ASP.NET Core Web API", "ASP.NET Core MVC", "ASP.NET Web Forms", "Entity Framework Core", "ADO.NET", "SQL Server", "React", "Razor Views", "Windows Services", "Jenkins CI/CD", "AWS EC2", "Checkmarx / SAST", "Git", "Bitbucket", "Jira", "Agile"]
   }
 ];
 
@@ -118,7 +120,7 @@ export const publicationsData = [
     year: "2025",
     doi: "10.1109/ICCCI64711.2025.11086125",
     doiUrl: "https://ieeexplore.ieee.org/document/11086125/",
-    summary: "Designed and trained an ensemble deep learning model combining LSTM and GRU networks to forecast Bitcoin prices, achieving an R-squared score of 0.986. Preprocessed historical price data, engineered time-series features, and evaluated model performance to improve forecasting accuracy.",
+    summary: "LSTM and GRU ensemble deep learning model for Bitcoin price forecasting, achieving an R-squared score of 0.986.",
     highlights: [
       "Designed and trained an ensemble deep learning model combining LSTM and GRU networks to forecast Bitcoin prices, achieving an R-squared score of 0.986.",
       "Preprocessed historical price data, engineered time-series features, and evaluated model performance to improve forecasting accuracy.",
@@ -132,19 +134,31 @@ export const publicationsData = [
 export const projectsData = [
   {
     id: 1,
-    title: "Loan Management System (LMS)",
-    subtitle: "Enterprise FinTech Application",
-    technologies: ["C#", "ASP.NET Core", "SQL Server", "Windows Services", "AWS EC2", "Jenkins"],
-    description: "FinTech application for managing loan-related operations, supporting business processes including asset management, loan expenses, logistics, and dealer operations.",
+    title: "Customer Contact Management System",
+    subtitle: "React, ASP.NET Core, SQL Server, JWT",
+    technologies: ["React", "ASP.NET Core Web API", "SQL Server", "Entity Framework Core", "JWT Authentication"],
+    description: "Full-stack application with secure JWT authentication, REST APIs for record management, and user-specific data access controls.",
     highlights: [
-      "Collaborated with Shriram Finance group to deliver solutions aligned with business requirements.",
-      "Optimized SQL stored procedures by 20% through indexing and query tuning.",
-      "Developed Windows Services for automated email notifications to clients and source branches.",
-      "Merged code changes and triggered environment builds using Jenkins CI/CD deployment process."
+      "Built a full-stack application using React, ASP.NET Core Web API, SQL Server and Entity Framework Core, with dependency injection for application services.",
+      "Implemented user registration, login and JWT authentication, with REST APIs for record management and search, restricting access to each user's own records."
     ],
     gradient: "from-purple-600/30 via-blue-600/20 to-transparent",
     iconColor: "#7C3AED",
-    github: "https://github.com/Vishnu51cse"
+    github: "https://github.com/Vishnu51cse/customer-contact-system"
+  },
+  {
+    id: 2,
+    title: "Personal Expense Tracker System",
+    subtitle: "ASP.NET Core MVC, SQL Server, JWT",
+    technologies: ["ASP.NET Core MVC", "Razor Views", "SQL Server", "Entity Framework Core", "JWT Authentication"],
+    description: "Expense tracking application with JWT-secured access, dependency injection, and clean separation of application and presentation layers.",
+    highlights: [
+      "Built an expense tracking application with ASP.NET Core MVC, Razor Views and SQL Server to manage personal expenses.",
+      "Integrated JWT authentication, dependency injection and Entity Framework Core, separating application logic from the presentation layer."
+    ],
+    gradient: "from-cyan-600/30 via-teal-600/20 to-transparent",
+    iconColor: "#06B6D4",
+    github: "https://github.com/Vishnu51cse/personal-expense-tracker"
   }
 ];
 
@@ -159,19 +173,4 @@ export const educationData = [
   }
 ];
 
-export const certificationsData = [
-  {
-    title: "Foundational C# with Microsoft",
-    issuer: "Microsoft / FreeCodeCamp",
-    date: "Feb 2026 – Mar 2026",
-    badgeColor: "border-purple-500/40 text-purple-400 bg-purple-500/10",
-    icon: "SiMicrosoft"
-  },
-  {
-    title: "Online MERN Stack Internship",
-    issuer: "Professional Web Development Program",
-    date: "Jul 2024 – Sep 2024",
-    badgeColor: "border-cyan-500/40 text-cyan-400 bg-cyan-500/10",
-    icon: "FaReact"
-  }
-];
+export const certificationsData = [];

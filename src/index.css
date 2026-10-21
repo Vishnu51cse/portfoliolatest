@@ -24,6 +24,16 @@
   }
 }
 
+/* Hero Background Gradient */
+.hero-bg-radial {
+  background: radial-gradient(circle at 50% 40%, #FFFFFF 0%, #FFF4F6 22%, #F6E2E6 48%, #E5B8C2 72%, #3D0E18 100%);
+}
+
+.hero-glow-soft {
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 230, 236, 0.5) 45%, transparent 70%);
+  filter: blur(40px);
+}
+
 /* Glassmorphism utilities */
 .glass-card {
   background: rgba(17, 24, 39, 0.65);
@@ -31,6 +41,14 @@
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(139, 38, 62, 0.15);
+  box-shadow: 0 10px 30px -5px rgba(139, 38, 62, 0.12);
 }
 
 .glass-card-hover {
@@ -59,6 +77,12 @@
   -webkit-text-fill-color: transparent;
 }
 
+.text-gradient-hero {
+  background: linear-gradient(135deg, #6B1124 0%, #9E2A4B 50%, #4A0E1A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .text-gradient-accent {
   background: linear-gradient(135deg, #06B6D4 0%, #14B8A6 100%);
   -webkit-background-clip: text;
@@ -79,8 +103,11 @@
     linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
 }
 
-.bg-radial-gradient {
-  background: radial-gradient(circle at 50% 20%, rgba(124, 58, 237, 0.15) 0%, rgba(59, 130, 246, 0.08) 35%, transparent 70%);
+.bg-grid-pattern-hero {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(139, 38, 62, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(139, 38, 62, 0.05) 1px, transparent 1px);
 }
 
 .glow-purple {
@@ -113,7 +140,7 @@
   background: #7C3AED;
 }
 
-/* Pulse Keyframes */
+/* Pulse & Mouse keyframes */
 @keyframes float {
   0%, 100% { transform: translateY(0px) rotate(0deg); }
   50% { transform: translateY(-12px) rotate(2deg); }
@@ -130,4 +157,22 @@
 
 .animate-pulse-glow {
   animation: pulse-glow 8s ease-in-out infinite;
+}
+
+@keyframes mouse-move {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+.animate-mouse-move {
+  animation: mouse-move 1.5s ease-in-out infinite;
+}
+
+@keyframes cursor-pulse {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+
+.animate-cursor-pulse {
+  animation: cursor-pulse 2s ease-in-out infinite;
 }
